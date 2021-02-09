@@ -1,6 +1,6 @@
 ## CCC
 
-![palette](./palette.png)
+![](./palette.png)
 
 ### Installation
 
