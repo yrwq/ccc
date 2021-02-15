@@ -28,4 +28,5 @@ int main(int argc, char ** argv) {
         printf(" \033[%dm%s \033[m", 91 + i, symbol);
     }
     printf("\n\n");
+
 }
