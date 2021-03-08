@@ -24,7 +24,7 @@ export CCC_SYMBOL="" export CCC_SYMBOL="xdd"
 
 ### Installation
 
-Running `make` will compile ccc in every language and copy it to bin/<lang>_ccc
+Running `make` will compile ccc in every language and copy it to bin/*_ccc
 
 
 #### C
