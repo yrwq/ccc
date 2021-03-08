@@ -1,7 +1,7 @@
 #!/bin/sh
 
 [ $CCC_SYMBOL ] && symbol=$CCC_SYMBOL
-[ -z $CCC_SYMBOL ] && symbol=""
+[ -z $CCC_SYMBOL ] && symbol=""
 [ $1 ] && symbol="$1"
 
 printf "\n"

@@ -20,9 +20,9 @@ func main() {
         env_symbol, exists := os.LookupEnv("CCC_SYMBOL")
         if exists {
             symbol = env_symbol
-        // If env var doesn't exist, fallback to a heart as the symbol
+        // If env var doesn't exist, fallback to a go symbol
         } else {
-            symbol = ""
+            symbol = ""
         }
     }
 

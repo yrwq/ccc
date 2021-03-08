@@ -12,7 +12,7 @@ int main(int argc, char ** argv) {
     if (argc == 1) {
         char * env_symbol = getenv("CCC_SYMBOL");
         if (env_symbol == NULL) {
-            symbol = "";
+            symbol = "";
         } else {
             symbol = env_symbol;
         }

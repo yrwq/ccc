@@ -17,11 +17,11 @@ fn main() {
 
     // Otherwise check for an environment variable 'CCC_SYMBOL',
     // If the variable exists, use it as the symbol, if not,
-    // a heart will be used.
+    // a rust symbol will be used.
     } else {
         match env::var("CCC_SYMBOL") {
             Ok(val) => symbol = val,
-            Err(_e) => symbol = "".to_string(),
+            Err(_e) => symbol = "".to_string(),
         }
     }
 
