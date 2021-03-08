@@ -17,15 +17,15 @@ sudo make sh
 ### Usage
 
 ```zsh
-clr <symbol>
-clr 🤠
-clr 
-clr xdd
+ccc <symbol>
+ccc 🤠
+ccc 
+ccc xdd
 ```
 
 The symbol can be any character, or any string.
 
-If you run `clr` without a symbol, the default symbol will be used.
+If you run `ccc` without a symbol, the default symbol will be used.
 
 To define a default symbol, you can use an environment variable:
 
