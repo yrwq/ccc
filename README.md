@@ -19,11 +19,13 @@ To define a default symbol, you can use an environment variable:
 
 ```zsh
 export CCC_SYMBOL="🤠"
-export CCC_SYMBOL=""
-export CCC_SYMBOL="xdd"
+export CCC_SYMBOL="" export CCC_SYMBOL="xdd"
 ```
 
 ### Installation
+
+Running `make` will compile ccc in every language and copy it to bin/<lang>_ccc
+
 
 #### C
 ```zsh
@@ -38,4 +40,8 @@ make sh && sudo make install
 #### Rust
 ```zsh
 make rust && sudo make install
+```
+#### Go
+```zsh
+make go && sudo make install
 ```
