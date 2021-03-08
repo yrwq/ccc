@@ -12,7 +12,7 @@ ccc 
 
 The symbol can be any character, or any string.
 
-If you run `ccc` without an argument, the default symbol will be used(usually a language symbol from (nerd-fonts)[https://github.com/ryanoasis/nerd-fonts]).
+If you run `ccc` without an argument, the default symbol will be used(usually a language symbol from [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)).
 
 To define a default symbol, you can use an environment variable:
 
