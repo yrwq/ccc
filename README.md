@@ -47,5 +47,9 @@ make go && sudo make install
 ```
 #### Lua
 ```zsh
-make go && sudo make install
+make lua && sudo make install
+```
+#### Python
+```zsh
+make py && sudo make install
 ```

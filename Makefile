@@ -1,7 +1,7 @@
 TARGET = ccc
 PREFIX ?= /usr/local
 
-.PHONY: all lua sh rust go c install uninstall clean
+.PHONY: all py lua sh rust go c install uninstall clean
 
 all: clean
 	mkdir -p bin
