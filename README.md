@@ -4,8 +4,14 @@
 
 ### Installation
 
+#### C
 ```zsh
 make && sudo make install
+```
+
+#### Sh
+```zsh
+sudo make sh
 ```
 
 ### Usage

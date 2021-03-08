@@ -1,13 +1,14 @@
 TARGET = ccc
-SRC = ccc.c
 PREFIX ?= /usr/local
 
-.PHONY: all install uninstall clean
+.PHONY: all sh install uninstall clean
 
-all: $(TARGET)
+all:
+	$(CC) src/ccc.c -o ccc
 
-$(TARGET): $(SRC)
-	$(CC) $(SRC) -o $@
+sh:
+	mkdir -p $(PREFIX)/bin
+	install -m755 $(TARGET) $(PREFIX)/bin/$(TARGET)
 
 install: $(TARGET)
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
