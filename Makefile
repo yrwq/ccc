@@ -30,4 +30,5 @@ uninstall:
 	$(RM) $(DESTDIR)$(PREFIX)/bin/$(TARGET)
 
 clean:
+	$(RM) -rf bin
 	$(RM) $(TARGET)
