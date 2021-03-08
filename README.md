@@ -5,21 +5,21 @@
 ### Usage
 
 ```zsh
-ccc <symbol>
+ccc "any string"
 ccc 🤠
 ccc 
-ccc xdd
 ```
 
 The symbol can be any character, or any string.
 
-If you run `ccc` without a symbol, the default symbol will be used.
+If you run `ccc` without an argument, the default symbol will be used(usually a language symbol from (nerd-fonts)[https://github.com/ryanoasis/nerd-fonts]).
 
 To define a default symbol, you can use an environment variable:
 
 ```zsh
+export CCC_SYMBOL="any string"
 export CCC_SYMBOL="🤠"
-export CCC_SYMBOL="" export CCC_SYMBOL="xdd"
+export CCC_SYMBOL=""
 ```
 
 ### Installation
