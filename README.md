@@ -2,18 +2,6 @@
 
 ![](./palette.png)
 
-### Installation
-
-#### C
-```zsh
-make && sudo make install
-```
-
-#### Sh
-```zsh
-sudo make sh
-```
-
 ### Usage
 
 ```zsh
@@ -33,4 +21,21 @@ To define a default symbol, you can use an environment variable:
 export CCC_SYMBOL="🤠"
 export CCC_SYMBOL=""
 export CCC_SYMBOL="xdd"
+```
+
+### Installation
+
+#### C
+```zsh
+make && sudo make install
+```
+
+#### Sh
+```zsh
+make sh && sudo make install
+```
+
+#### Rust
+```zsh
+make rust && sudo make install
 ```

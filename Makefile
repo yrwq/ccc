@@ -3,12 +3,17 @@ PREFIX ?= /usr/local
 
 .PHONY: all sh install uninstall clean
 
-all:
+all: clean
 	$(CC) src/ccc.c -o ccc
 
+cpp: clean
+	g++ src/ccc.cpp -o ccc
+
 sh:
-	mkdir -p $(PREFIX)/bin
-	install -m755 $(TARGET) $(PREFIX)/bin/$(TARGET)
+	cp src/ccc.sh ccc
+
+rust:
+	rustc src/ccc.rs -o ccc
 
 install: $(TARGET)
 	mkdir -p $(DESTDIR)$(PREFIX)/bin

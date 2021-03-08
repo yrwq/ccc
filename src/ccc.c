@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void fg(char * symbol) {
-    printf("\n");
-    for (int i = -1; i < 7; i++) {
-        printf(" \033[%dm%s \033[m", 31 + i, symbol);
-    }
-    printf("\n");
-
-    for (int i = -1; i < 7; i++) {
-        printf(" \033[%dm%s \033[m", 91 + i, symbol);
-    }
-    printf("\n\n");
-}
-
 int main(int argc, char ** argv) {
 
     char * symbol;
@@ -31,5 +18,14 @@ int main(int argc, char ** argv) {
         }
     }
 
-    fg(symbol);
+    printf("\n");
+    for (int i = -1; i < 7; i++) {
+        printf(" \033[%dm%s \033[m", 31 + i, symbol);
+    }
+    printf("\n");
+
+    for (int i = -1; i < 7; i++) {
+        printf(" \033[%dm%s \033[m", 91 + i, symbol);
+    }
+    printf("\n\n");
 }
