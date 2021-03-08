@@ -7,9 +7,13 @@ all: clean
 	mkdir -p bin
 	install -m755 src/ccc.sh bin/sh_ccc
 	install -m755 src/ccc.lua bin/lua_ccc
+	install -m755 src/ccc.py bin/py_ccc
 	rustc src/ccc.rs -o bin/rust_ccc
 	go build src/ccc.go && mv ccc bin/go_ccc
 	$(CC) src/ccc.c -o bin/c_ccc
+
+py:
+	cp src/ccc.py ccc
 
 sh:
 	cp src/ccc.sh ccc

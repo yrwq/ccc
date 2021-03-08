@@ -45,3 +45,7 @@ make rust && sudo make install
 ```zsh
 make go && sudo make install
 ```
+#### Lua
+```zsh
+make go && sudo make install
+```
