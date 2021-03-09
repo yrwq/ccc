@@ -5,6 +5,7 @@ PREFIX ?= /usr/local
 
 all: clean
 	mkdir -p bin
+	install -m755 src/ccc.rb bin/ruby_ccc
 	install -m755 src/ccc.sh bin/sh_ccc
 	install -m755 src/ccc.lua bin/lua_ccc
 	install -m755 src/ccc.py bin/py_ccc
