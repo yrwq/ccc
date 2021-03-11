@@ -25,7 +25,7 @@ fn main() {
         }
     }
 
-    // The rest Iterate the 'count variable and using
+    // The rest is iterating the 'count variable and using
     // Escape characters to colorize the symbol
 
     let mut count = 0u32;

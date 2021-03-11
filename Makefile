@@ -1,7 +1,7 @@
 TARGET = ccc
 PREFIX ?= /usr/local
 
-.PHONY: all py lua sh rust go c install uninstall clean
+.PHONY: all rb py lua sh rust go c install uninstall clean
 
 all: clean
 	mkdir -p bin
@@ -12,6 +12,9 @@ all: clean
 	rustc src/ccc.rs -o bin/rust_ccc
 	go build src/ccc.go && mv ccc bin/go_ccc
 	$(CC) src/ccc.c -o bin/c_ccc
+
+rb:
+	cp src/ccc.rb ccc
 
 py:
 	cp src/ccc.py ccc
