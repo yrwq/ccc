@@ -17,7 +17,6 @@ int main(int argc, char ** argv) {
             symbol = env_symbol;
         }
     }
-
     printf("\n");
     for (int i = -1; i < 7; i++) {
         printf(" \033[%dm%s \033[m", 31 + i, symbol);
@@ -29,3 +28,4 @@ int main(int argc, char ** argv) {
     }
     printf("\n\n");
 }
+
